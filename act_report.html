@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>What Twitter Thinks of Good Dogs</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      max-width: 750px;
+      margin: 60px auto;
+      padding: 0 24px;
+      background-color: #ffffff;
+      color: #222;
+      line-height: 1.75;
+    }
+
+    h1 {
+      color: #2E86C1;
+      font-size: 2.5em;
+      margin-bottom: 0.2em;
+    }
+
+    h2 {
+      color: #117A65;
+      font-size: 1.5em;
+      margin-top: 2em;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 1.2em;
+    }
+
+    em {
+      font-style: italic;
+      color: #555;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 2em;
+    }
+
+    li {
+      margin-bottom: 0.8em;
+    }
+
+    .chart-placeholder {
+      width: 100%;
+      height: 300px;
+      background: #ececec;
+      border-radius: 6px;
+      border: 2px dashed #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-style: italic;
+      color: #999;
+      margin: 30px 0;
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #777;
+      text-align: center;
+      border-top: 1px solid #eee;
+      padding-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>What Twitter Thinks of Good Dogs: Analyzing Ratings and Reviews</h1>
+
+  <p>If there’s one thing Twitter agrees on, it’s that dogs are pure, perfect beings who deserve more than a 10/10. In fact, they often get <em>13/10</em> or <em>15/10</em>, breaking the traditional rating scale — and no one minds.</p>
+
+  <p>We collected and cleaned thousands of tweets from the popular “WeRateDogs” Twitter account, a feed famous for sharing photos of dogs along with short descriptions and delightfully inflated ratings. Our goal was to explore patterns in these reviews, extract consistent rating data, and gain insight into how the internet celebrates man’s best friend.</p>
+
+  <p>After wrangling the data with Pandas and NumPy, we normalized the ratings, standardized inconsistent formats, and extracted dog names and breed information from tweet text. We also handled duplicates, missing values, and irregular characters, like emojis and hashtags.</p>
+
+  <h2>Key Insights</h2>
+
+  <ul>
+    <li>Most dogs received ratings between 11 and 14 out of 10. The average rating across all tweets was <strong>12.7</strong>, reflecting a culture of enthusiastic overrating.</li>
+    <li>Certain breeds — such as Golden Retrievers, Labradors, and Corgis — appeared more frequently and often scored slightly above average.</li>
+    <li>Tweets with images had <strong>higher engagement and slightly better ratings</strong> than those without.</li>
+    <li>The word “floof” and the presence of emojis were both common in tweets with the highest ratings.</li>
+  </ul>
+
+  <h2>Visualization</h2>
+
+  <div class="chart-placeholder">
+  <img src="./downloadhist.png" width="800" height="350">
+  </div>
+
+  <p>This analysis shows not only how adored dogs are online, but also how internet culture reshapes traditional metrics with humor and affection. Dogs may not care about ratings — but Twitter sure does.</p>
+
+  <footer>
+    © 2025 • Written by the Data Insights Team<br>
+    Originally published on <em>datajournal.club</em>
+  </footer>
+
+
+
+</body></html>

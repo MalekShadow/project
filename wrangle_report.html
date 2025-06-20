@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)https://pc24kcd7b2.prod.udacity-student-workspaces.com/files/wrangle_report.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Data Wrangling Report - Internal Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 60px auto;
+            max-width: 800px;
+            background-color: #f4f7f9;
+            padding: 40px;
+            border: 2px solid #ccc;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            line-height: 1.6;
+            position: relative;
+        }
+        h1 {
+            color: #2E86C1;
+            text-align: center;
+            border-bottom: 2px solid #2E86C1;
+            padding-bottom: 10px;
+        }
+        .confidential-banner {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            background-color: #e74c3c;
+            color: white;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: bold;
+            transform: rotate(15deg);
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+<div class="confidential-banner">INTERNAL</div>
+
+<h1>Data Wrangling Report</h1>
+
+<p><strong>Internal Use Only — Do Not Distribute</strong></p>
+
+<p>The dataset was sourced from a collection of dog reviews and ratings shared on Twitter. It included tweet text, timestamps, usernames, hashtags, dog names, breed mentions, and assigned ratings. Pandas was used for data structuring and cleaning, while NumPy supported numerical operations and transformations. These tools were selected for their effectiveness in handling social media data.</p>
+
+<p>During the initial inspection, several issues were identified. These included missing values in dog name and breed fields, duplicate tweets, inconsistent date formats, and non-standard rating formats. Some tweets included multiple ratings or used unconventional formats, making parsing challenging. Additionally, text fields contained a mix of emojis, symbols, and irregular spacing.</p>
+
+<p>The wrangling process started by loading the tweets into a Pandas DataFrame. Duplicate entries were dropped to ensure each tweet was unique. Missing values in dog names were partially recovered using pattern recognition within the tweet text. Rating values were extracted using regular expressions and standardized into a numeric format. Date fields were parsed and converted into a consistent datetime format for better filtering and grouping.</p>
+
+<p>NumPy was used to apply transformations on extracted ratings, such as normalizing scales and identifying outliers. Additional features were engineered, including tweet length, presence of hashtags, and detection of media attachments.</p>
+
+<p>By the end of the wrangling process, the dataset was cleaned, consistently formatted, and structured for further analysis. All key fields were validated, text was normalized, and missing or irregular values were addressed. The dataset is now ready for sentiment analysis, rating trend exploration, or machine learning applications.</p>
+
+<p>This report summarizes the steps taken to prepare the dog review and rating tweets for internal research and analysis, ensuring the data is accurate, usable, and well-documented.</p>
+
+<footer>© 2025 — Data Science Team | Confidential Report</footer>
+
+
+
+</body></html>
